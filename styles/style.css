@@ -13,8 +13,11 @@ body {
 }
 
 /* shared styles */
-.display-flex {
+.flex {
     display: flex;
+}
+.container{
+  max-width: 1140px;
 }
 
 .text-dark {
@@ -42,47 +45,70 @@ span {
     max-width: 1140px;
     margin: 0 auto;
 }
- .nav-img {
-    margin-left: 20px;
-}
 
   .nav-items {
     list-style: none;
-    margin-right: 50px;
 }
 
 .nav-links {
     text-decoration: none;
     font-weight: 500;
+    gap: 30px;
 }
 
 /* banner styles */
 .banner {
      margin-top: 50px;
-    /* padding-top: 50px; */
     justify-content: space-between;
-    align-items: center;
-    padding: 60px 100px;
-    gap: 100px;
+    align-items: end;
 }
 
    .banner-content {
-    max-width: 600px;
+    max-width: 570px;
     margin: 0 auto;
-    text-align: left;
-    margin-left: 20px;
+     text-align: left;
     flex: 1;
     }
 
   .banner-title {
     font-weight: 700;
     font-size: 3rem;
-     margin-bottom: 0px;
+    margin-bottom: 0px;
   }
 
 .banner-image {
    width: 100%;
-  
+   height: auto;
+  /* max-width: 570px; */
+  flex: 1;
 }
 
 
+
+
+@media screen and ( max-width: 576px) {
+.navbar {
+  margin-left: 10px;
+  margin-left: 10px;
+}
+
+  .nav-image {
+    width: 65px;
+    height: auto;
+    
+  }
+
+  .responsive {
+    display: none;
+  }
+
+.banner {
+flex-direction: column-reverse;
+}
+
+.banner-content {
+  margin-left: 25px;
+}
+
+
+}

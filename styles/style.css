@@ -65,7 +65,7 @@ span {
 
    .banner-content {
     max-width: 570px;
-    margin: 0 auto;
+     margin: 0 auto; 
      text-align: left;
     flex: 1;
     }

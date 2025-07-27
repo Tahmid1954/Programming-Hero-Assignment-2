@@ -28,12 +28,15 @@ body {
     color: #8987A1;
 }
 
-span {
+.span {
     color: #E95A08;
 }
 
 /* header styles */
-
+header {
+  max-width: 1140px;
+  margin: 0px auto;
+}
 
 /* nav styles */
 .navbar { 
@@ -83,6 +86,47 @@ span {
   flex: 1;
 }
 
+/* plants section style */
+section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.plants-title {
+  font-size: 3.15rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+/* flower sectiion style */
+.flower-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+margin-left: 50px;
+margin-top: 30px;
+gap: 20px;
+}
+
+.flower-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.flower-price {
+font-size: 1.4rem;
+font-weight: 700;
+margin-top: 0px;
+}
+
+.flower-button {
+background-color: #E95A08;
+padding: 20px 80px;
+color: white;
+border: none;
+font-weight: 600;
+font-size: 1rem;
+}
 
 
 
@@ -108,6 +152,18 @@ flex-direction: column-reverse;
 
 .banner-content {
   margin-left: 25px;
+}
+
+section {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.flower-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ justify-items: center;
+  
 }
 
 

@@ -33,10 +33,10 @@ body {
 }
 
 /* header styles */
-header {
+/* header {
   max-width: 1140px;
   margin: 0px auto;
-}
+} */
 
 /* nav styles */
 .navbar { 
@@ -90,6 +90,7 @@ header {
 section {
   text-align: center;
   margin-top: 80px;
+  justify-content: center;
 }
 
 .plants-title {
@@ -102,7 +103,7 @@ section {
 .flower-container {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
-margin-left: 50px;
+/* margin-left: 50px; */
 margin-top: 30px;
 gap: 20px;
 }
@@ -129,7 +130,7 @@ font-size: 1rem;
 }
 
 
-
+/* responsive layout for small devices */
 @media screen and ( max-width: 576px) {
 .navbar {
   margin-left: 10px;

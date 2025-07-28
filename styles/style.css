@@ -44,10 +44,10 @@ body {
     align-items: center;
   }
 
-  .navbar, .banner {
+   .navbar, .banner {
     max-width: 1140px;
-    margin: 0 auto;
-}
+    margin: 0px auto;
+} 
 
   .nav-items {
     list-style: none;
@@ -104,6 +104,12 @@ section {
   margin-bottom: 0px;
 }
 
+ .plants-description  {
+   font-size: 1rem;
+  max-width: 620px;
+  margin: auto;
+} 
+
 /* flower sectiion style */
 .flower-container {
 display: grid;
@@ -136,16 +142,18 @@ font-size: 1rem;
 
 /* responsive layout for small devices */
 @media screen and ( max-width: 576px) {
-.navbar {
-  margin-left: 10px;
-  margin-left: 10px;
+
+.navbar, .banner {
+  max-width: 576px;
+  margin: 0px;
+ align-items: center;
 }
 
-  .nav-image {
-    width: 65px;
-    height: auto;
-    
-  }
+  .navbar img {
+   width: 70px;
+   height: auto;
+  
+    }
 
   .responsive {
     display: none;
@@ -156,19 +164,44 @@ flex-direction: column-reverse;
 }
 
 .banner-content {
-  margin-left: 25px;
+  margin-left: 10px;
+}
+
+.banner-flower img {
+width: 100%;
+margin-right: 0px;
+}
+
+main {
+  max-width: 576px;
+  margin: 0px 10px;
 }
 
 section {
   text-align: center;
-  margin: 0px auto;
+   margin: 0px auto;
 }
 
 .flower-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- justify-items: center;
+  gap: 20px;
+ justify-content: center;
   
+}
+
+.flower-box img {
+  width: 100%;
+}
+
+.flower-box {
+  width: 100%;
+}
+
+.flower-button {
+padding:  20px 35px;
+font-weight: 600;
+font-size: 1rem;
 }
 
 

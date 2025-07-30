@@ -228,7 +228,7 @@ margin-bottom: 10px;
 }
 
 .bloom-image {
-  background-image:url(/assets/deal-bloom.png);
+  background-image:url('./assets/deal-bloom.png');
   width: 360px;
   height: 200px; 
   border-radius: 20px;
@@ -236,14 +236,14 @@ margin-bottom: 10px;
 }
 
 .ana-image {
-  background-image:url(/assets/deal-ana.png);
+  background-image:url('./assets/deal-ana.png');
   width: 360px;
   height: 200px;
   border-radius: 20px;
 }
 
 .zabo-image {
-   background-image:url(/assets/deal-zabo.png);
+   background-image:url('./assets/deal-zabo.png');
   width: 750px;
   height: 420px; 
   border-radius: 20px;

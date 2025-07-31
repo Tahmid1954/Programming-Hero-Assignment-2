@@ -55,6 +55,16 @@ text-decoration: underline;
 
 }
 
+.footer-list {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.footer-lists {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
 /* nav styles */
 .navbar { 
     justify-content: space-between;
@@ -192,6 +202,7 @@ margin-bottom: 20px;
 /* latest deal section style */
 .deal-shop-container {
   margin-top: 100px;
+  display: none;
 }
 
 .deal-content {
@@ -218,6 +229,7 @@ margin-bottom: 10px;
   height: 200px; 
   border-radius: 20px;
   margin-bottom: 20px;
+   background-repeat: no-repeat;
 }
 
 .ana-image {
@@ -225,6 +237,7 @@ margin-bottom: 10px;
   width: 360px;
   height: 200px;
   border-radius: 20px;
+  background-repeat: no-repeat;
 }
 
 .zabo-image {
@@ -232,6 +245,7 @@ margin-bottom: 10px;
   width: 100%;
   height: 420px;
    border-radius: 20px;
+  background-repeat: no-repeat;
 }
 
 .zabo-text {
@@ -293,19 +307,21 @@ width: 100%;
 }
 
 /* footer section style */
- .footer {
-  display: none;
- }
  .footer-content {
   margin-top: 50px;
+   justify-content: space-between;
  }
 
   .footer-text {
-  width: 360px;
+  width: 270px;
  } 
 
  .footer-texts {
   margin-bottom: 0px;
+ }
+
+ .icon {
+ margin-left: 30px;
  }
 
 
@@ -467,5 +483,6 @@ width: 320px;
   padding: 10px 20px;
 }
 
+/* footer responsive style */
 
 }

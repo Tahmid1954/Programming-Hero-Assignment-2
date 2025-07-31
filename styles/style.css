@@ -192,7 +192,6 @@ margin-bottom: 20px;
 /* latest deal section style */
 .deal-shop-container {
   margin-top: 100px;
-  display: none;
 }
 
 .deal-content {
@@ -414,22 +413,23 @@ gap: 0px;
   font-size: 1.5rem;
 }
 
-/* discount shop section responsive  */
+/* deal & discount shop section responsive  */
 
-.deal-container {
+.deal-shop-container {
   margin-top: 50px;
 }
 
 .shop-container {
   margin-top: 50px;
   flex-direction: column;
-  
-}
+ }
 
-.zabo-image {
+
+
+ .zabo-image {
   width: 360px;
   height: 200px;
-}
+} 
 
 .zabo-text {
  padding: 50px;

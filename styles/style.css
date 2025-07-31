@@ -355,7 +355,8 @@ flex-direction: column-reverse;
 }
 
 .banner-content {
-    margin: 0 16px;
+    margin: 0 10px;
+    text-align: left;
 }
 
 .banner-flower img {

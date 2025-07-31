@@ -366,7 +366,7 @@ margin-right: 0px;
 
 /* plants section responsive */
 
-.container {
+ .container {
   max-width: 576px;
   margin: 0px 10px;
 }
@@ -485,4 +485,26 @@ width: 320px;
 
 /* footer responsive style */
 
+ .footer-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+ }
+
+ .footer-text {
+  width: 360px;
+  margin-bottom: 30px;
+  text-align: left;
+ }
+
+ .footer-list {
+  text-align: left;
+  margin-bottom: 0px;
+ }
+
+ .icon {
+  margin-right: 30px;
+  margin-left: 0px;
+ }
 }

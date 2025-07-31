@@ -11,6 +11,8 @@
 /* body styles */
 body {
     background-color: #F6F8FF;
+    max-width: 1264px;
+    margin: 0 auto;
 }
 
 /* shared styles */
@@ -19,6 +21,7 @@ body {
 }
 .container{
   max-width: 1140px;
+  margin: 0 auto;
 }
 
 .text-dark {
@@ -52,24 +55,13 @@ text-decoration: underline;
 
 }
 
-/* header styles */
- header {
-  max-width: 1140px;
-  margin: 0px auto;
-} 
-
 /* nav styles */
 .navbar { 
     justify-content: space-between;
     align-items: center;
   }
 
-   .navbar, .banner {
-    max-width: 1140px;
-    margin: 0px auto;
-} 
-
-  .nav-items {
+.nav-items {
     list-style: none;
 }
 
@@ -88,7 +80,6 @@ text-decoration: underline;
 
    .banner-content {
     max-width: 410px;
-    text-align: left;
     flex: 1;
     }
 
@@ -103,12 +94,6 @@ text-decoration: underline;
    height: auto;
   /* max-width: 570px; */
   flex: 1;
-}
-
-/* main section style */
-main {
-  max-width: 1140px;
-  margin: 0px auto;
 }
 
 /* plants section style */
@@ -205,8 +190,9 @@ margin-bottom: 20px;
 }
 
 /* latest deal section style */
-.deal-container {
+.deal-shop-container {
   margin-top: 100px;
+  display: none;
 }
 
 .deal-content {
@@ -221,14 +207,14 @@ font-weight: 700;
 margin-bottom: 10px;
 }
 
-/* discount shop section style  */
+/* discount shop section style */
 .shop-container {
   margin-top: 100px;
   gap: 20px;
 }
 
 .bloom-image {
-  background-image:url('../assets/deal-bloom.png');
+  background-image:url("../assets/deal-bloom.png");
   width: 360px;
   height: 200px; 
   border-radius: 20px;
@@ -236,28 +222,29 @@ margin-bottom: 10px;
 }
 
 .ana-image {
-  background-image:url('../assets/deal-ana.png');
+  background-image:url("../assets/deal-ana.png");
   width: 360px;
   height: 200px;
   border-radius: 20px;
 }
 
 .zabo-image {
-   background-image:url('../assets/deal-zabo.png');
-  width: 750px;
-  height: 420px; 
-  border-radius: 20px;
+   background-image:url("../assets/deal-zabo.png");
+  width: 100%;
+  height: 420px;
+   border-radius: 20px;
 }
 
 .zabo-text {
- text-align: center;
- padding: 150px;
+  text-align: center;
+ padding-top: 140px;
 }
 
 .zabo-title {
   font-size: 2rem;
   font-weight: 700;
   color: white;
+  margin-bottom: 10px;
 }
 
 .zabo-shop {
@@ -265,10 +252,66 @@ font-size: 1.5rem;
 font-weight: 600;
 color: white;
 text-decoration: underline;
+margin-top: 10px;
 }
+
+/* newsletter section style */
+.newsletter-container {
+  margin-top: 60px;
+  background-image: url("../assets/news-letter-bg.png");
+   height: 400px;
+}
+
+.newsletter-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.newsletter-title {
+font-size: 3rem;
+font-weight: 700;
+color: white;
+margin-bottom: 20px;
+}
+
+.submission-box {
+display: flex;
+width: 100%;
+}
+
+.newsletter-content input[type="email"] {
+ height: 32px;
+ width: 100%;
+}
+
+.newsletter-button {
+  padding: 10px 40px;
+  color: white;
+ background-color: #E95A08;
+ border: none;
+}
+
+/* footer section style */
+ .footer {
+  display: none;
+ }
+ .footer-content {
+  margin-top: 50px;
+ }
+
+  .footer-text {
+  width: 360px;
+ } 
+
+ .footer-texts {
+  margin-bottom: 0px;
+ }
 
 
 /* responsive layout for small devices */
+
 @media screen and ( max-width: 576px) {
 
 .navbar, .banner {
@@ -287,6 +330,8 @@ text-decoration: underline;
     display: none;
   }
 
+/* banner section responsive */
+
 .banner {
 flex-direction: column-reverse;
 }
@@ -304,7 +349,9 @@ width: 100%;
 margin-right: 0px;
 }
 
-main {
+/* plants section responsive */
+
+.container {
   max-width: 576px;
   margin: 0px 10px;
 }
@@ -317,6 +364,8 @@ section {
 .plants-title {
   font-size: 2.5rem;
 }
+
+/* flower section responsive */
 
 .flower-container {
   display: grid;
@@ -341,6 +390,7 @@ font-size: 1rem;
 }
 
 /* plants lover section responsive */
+
 .plants-lover-container {
 margin-top: 50px;
 flex-direction: column;
@@ -349,6 +399,10 @@ gap: 0px;
 
 .plants-lover-badge {
   display: none;
+}
+
+.plants-lover-image {
+  height: auto;
 }
 
 .plants-lover-content {
@@ -372,7 +426,6 @@ gap: 0px;
   
 }
 
-
 .zabo-image {
   width: 360px;
   height: 200px;
@@ -389,5 +442,30 @@ gap: 0px;
 .zabo-shop {
 font-size: 1rem;
 }
+
+/* newsletter section responsive */
+.newsletter-container {
+   height: 200px;
+   margin-top: 50px;
+}
+
+.newsletter-content {
+  padding-top: 50px;
+}
+
+.newsletter-title {
+  font-size: 1.2rem;
+}
+
+.submission-box {
+max-width: 500px;
+margin: 0 auto;
+width: 320px;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+}
+
 
 }
